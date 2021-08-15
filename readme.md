@@ -1,1 +1,3 @@
-git cource
+# GIT CURSE
+
+git hub
