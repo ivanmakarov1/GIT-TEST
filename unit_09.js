@@ -50,7 +50,13 @@ document.querySelector('.b-4').onclick = f4;
 function f5() {
     let elem = document.querySelector('.out-4');
     let contains = elem.classList.contains('bg-orange');
-    console.log(contains);
+    //document.getElement = contains.innerHTML('.out-5');
+    if(contains === true){
+        document.querySelector(".out-5").innerHTML = true;
+    }
+    else{
+        document.querySelector(".out-5").innerHTML = false;
+    }
 }
 
 document.querySelector('.b-5').onclick = f5;
