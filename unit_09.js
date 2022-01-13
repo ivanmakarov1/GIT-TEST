@@ -60,6 +60,7 @@ document.querySelector('.b-5').onclick = f5;
 // По нажатию .b-6 запускайте функцию f6, которая выводит в .out-6 количество параграфов с классом .p-6.
 
 function f6() {
+let elem = document.querySelector('.out-6');
 
 }
 
