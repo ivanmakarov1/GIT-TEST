@@ -60,8 +60,8 @@ document.querySelector('.b-5').onclick = f5;
 // По нажатию .b-6 запускайте функцию f6, которая выводит в .out-6 количество параграфов с классом .p-6.
 
 function f6() {
-    let a = document.querySelectorAll('.p-6').length;
-    document.querySelector('.out-6').innerHTML += a;
+    let len = document.querySelectorAll('.p-6').length;
+    document.querySelector('.out-6').innerHTML += len;
 
 }
 
@@ -74,7 +74,9 @@ document.querySelector('.b-6').onclick = f6;
 let blocks7 = document.querySelectorAll('.out-7');
 
 function f7() {
-    //внутри цикла blocks7[i].classList....
+    for(let i = 0; i < 3; i++){
+        blocks7[i].classList.add('bg-orange');
+    }//внутри цикла blocks7[i].classList....
 }
 
 document.querySelector('.b-7').onclick = f7;
@@ -86,7 +88,9 @@ document.querySelector('.b-7').onclick = f7;
 let blocks8 = document.querySelectorAll('.out-8');
 
 function f8() {
-    //внутри цикла blocks8[i].classList....
+    for(let i = 0; i < 4; i++){
+        blocks8[i].classList.toggle('bg-orange');
+    }//внутри цикла blocks8[i].classList....
 }
 
 document.querySelector('.b-8').onclick = f8;
@@ -96,6 +100,7 @@ document.querySelector('.b-8').onclick = f8;
 // Усложним предыдущие задачи. С помощью цикла повесим на блоки .out-9 событие клик. По клику должна выполняться функция f9. Функция, должна добавлять класс .bg-orange тому .out-9 на котором кликнули.
 
 function f9() {
+    this.classList.add('bg-orange');
     //this.classList...  // все решается одной строкой
 }
 
@@ -112,11 +117,14 @@ for (let i = 0; i < div9.length; i++) {
 //let div10 = тут получите все out-10
 
 function f10() {
-
+    this.classList.toggle('bg-orange');
 }
 
-// а тут цикл, похожий на предыдущее задание
+let div10 = document.querySelectorAll('.out-10');
 
+for (let i = 0; i < div10.length; i++) {
+    div10[i].onclick = f10;// а тут цикл, похожий на предыдущее задание
+}
 
 
 //  Task 11
