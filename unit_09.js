@@ -171,7 +171,6 @@ function f13_1() {
     document.querySelector('.out-13-1').innerHTML += this.innerHTML; 
 }
 
-
 document.querySelector('.b-13').onclick = f13;
 
 //  Task 14
