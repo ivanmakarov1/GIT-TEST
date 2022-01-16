@@ -132,7 +132,10 @@ for (let i = 0; i < div10.length; i++) {
 
 
 function f11() {
-
+let elem = document.createElement('div');
+div11.innerHTML += '25';
+console.log(div11);
+//document.querySelector(".out-11").innerHTML = elem = '25';
 }
 
 document.querySelector('.b-11').onclick = f11;
