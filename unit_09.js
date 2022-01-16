@@ -164,6 +164,7 @@ function f13() {
     elem13.innerHTML += 'pushMe';
     elem13.classList.add('bg-orange');
     out13.appendChild(elem13);
+    elem13.onclick = f13_1;
 }
 
 function f13_1() {
