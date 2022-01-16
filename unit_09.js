@@ -178,7 +178,11 @@ document.querySelector('.b-13').onclick = f13;
 
 
 function f14() {
-
+    let out14 = document.querySelector('.out-14');
+    let elem14 = document.createElement('div');
+    elem14.innerHTML += '14';
+    elem14.classList.add('bg-orange');
+    out14.appendChild(elem14);
 }
 
 document.querySelector('.b-14').onclick = f14;
