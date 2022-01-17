@@ -233,10 +233,11 @@ document.querySelector('.b-17').onclick = f17;
 // Кнопкa .b-18, которая запускает функцию f18. Функция с помощью getAttribute получает data-b атрибут с параграф .p-18 и выводит в .out-18.
 
 function f18() {
-    let elem18 = document.getAttribute('.p-18');
+    let elem18 = document.querySelector('.p-18');
     let out18 = document.querySelector('.out-18');
     out18.appendChild(elem18);
-    elem18.innerHTML();
+    elem18.getAttribute;
+    
 }
 
 document.querySelector('.b-18').onclick = f18;
