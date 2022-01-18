@@ -234,9 +234,10 @@ document.querySelector('.b-17').onclick = f17;
 
 function f18() {
     let elem18 = document.querySelector('.p-18');
+    let value = elem18.getAttribute('data-b');
     let out18 = document.querySelector('.out-18');
-    elem18.getAttribute('data-b');
-    out18.appendChild(elem18);
+    console.log(value);
+    //out18.appendChild(value);
     
     
 }
