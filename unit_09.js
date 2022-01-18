@@ -236,7 +236,7 @@ function f18() {
     let elem18 = document.querySelector('.p-18');
     let out18 = document.querySelector('.out-18');
     out18.appendChild(elem18);
-    elem18.getAttribute;
+    elem18.getAttribute();
     
 }
 
